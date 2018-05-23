@@ -151,7 +151,7 @@ function setup() {
         LawrenceAnim = Lawrence.addAnimation("lawrence", "Trainers/Lawrence2.png")
         Lawrence.depth = 0
         trainer3 = createSprite(1700, 650)
-        trainer3anim = trainer3.addAnimation("trainer3", "Characters/police.png")
+        trainer3anim = trainer3.addAnimation("trainer3", "Characters/police2.png")
         trainer3.visible = false
         trainer3.depth = 1;
         trainer3defeated = false
