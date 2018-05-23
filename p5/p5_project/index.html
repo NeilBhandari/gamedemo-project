@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Road Warrior</title>
+      <link rel="icon" href="https://pbs.twimg.com/profile_images/871822106069258240/e5urKIof_400x400.jpg">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;}
+    </style>
+    <script src="../p5.min.js"></script>
+     <script src="../p5.play.js" type="text/javascript"></script>
+    <script src ="../p5/empty-example/Idle/idle1.png"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+ <script>
+
+var sound1="tourn.mp3"
+var sound2="Oblivion.mp3"
+var sound3="eso.mp3"
+var sound4="china.mp3"
+var sound5="balmora.mp3"
+var sound6="tourn.mp3"
+var sound7="Oblivion.mp3"
+var sound8="eso.mp3"
+var sound9="china.mp3"
+var sound10="balmora.mp3"
+var n=Math.round(Math.random()*9)
+if (n==0) n=sound1
+else if (n==1) n=sound2
+else if (n==2) n=sound3
+else if (n==3) n=sound4
+else if (n==4) n=sound5
+else if (n==5) n=sound6
+else if (n==6) n=sound7
+else if (n==7) n=sound8
+else if (n==8) n=sound9
+else n=sound10
+document.write('<embed src='+'"'+n+'"'+'hidden="true" border="0" width="1" height="1" autostart="true" loop="true">')
+
+var pic1="BACK.jpg"
+var pic2="BACK1.jpg"
+var pic3="BACK3.jpeg"
+var pic4="BACK4.jpg"
+var pic5="BACK2.jpg"
+
+
+var m
+if (n==sound1) m=pic1
+else if (n==sound2) m=pic2
+else if (n==sound3) m=pic3
+else if (n==sound4) m=pic4
+else if (n==sound5) m=pic5
+else if (n==sound6) m=pic1
+else if (n==sound7) m=pic2
+else if (n==sound8) m=pic3
+else if (n==sound9) m=pic4
+else m=pic5
+
+</script>
+  </head>
+  <body>
+      <div id ="Hi">
+        <form>
+        <input type="button" value="RESTART MATCH" onclick="window.location.href='https://ide50-neilbhandari.cs50.io:8080/empty-example/'" />
+        </form>
+        <p> Controls:
+        <br>Sol (right): Arrow Keys to move, K for normal attack, L for special attack.
+        <br>Zato (left): WASD to move, Z for normal attack, X for special attack
+        <br>Tips: The cooldown for special attacks is 10 seconds.
+        <br>Try Jumping to avoid special attacks!</p>
+        </div>
+
+
+
+  </body>
+</html>
